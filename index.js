@@ -4,7 +4,7 @@ let http = require("http")
 
 let server = http.createServer(function(req,res){
 
-  if(req.url=="/about"){
+  if(req.url=="/file-write"){
 
     fs.writeFile("demo.text","Hello World!",function(error){
        
